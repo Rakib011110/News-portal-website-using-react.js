@@ -1,5 +1,14 @@
 import React from "react";
 import { Button, ListGroup } from "react-bootstrap";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaTwitter,
+  FaGoogle,
+} from "react-icons/fa";
+import bg from "../../assets/bg.png";
+import QZone from "./QZone";
 
 const RightNav = () => {
   return (
