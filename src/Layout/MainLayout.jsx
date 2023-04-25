@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import LeftNav from "../Components/Share/LeftNav";
 import RightNav from "../Components/Share/RightNav";
 import Header from "../Components/Share/Header";
+import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
@@ -15,7 +16,7 @@ const MainLayout = () => {
           <LeftNav></LeftNav>
         </Col>
         <Col lg={6} sm>
-          <h1> Main is cooming</h1>
+          <Outlet />
         </Col>
         <Col lg={3} sm>
           <RightNav></RightNav>
