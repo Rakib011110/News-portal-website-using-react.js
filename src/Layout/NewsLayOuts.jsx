@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Header from "../Components/Share/Header";
 import { Outlet } from "react-router-dom";
+import RightNav from "../Components/Share/RightNav";
 
 const NewsLayOuts = () => {
   return (
