@@ -1,12 +1,15 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Category = () => {
+  const categoryNews = useLoaderData();
+  console.log(categoryNews);
+
   const { id } = useParams();
 
   return (
     <div>
-      <h1> This is Catorgy {id} </h1>
+      <h1>Catorgy news are {categoryNews.length} </h1>
     </div>
   );
 };
